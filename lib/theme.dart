@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
 const MaterialColor customSwatch = MaterialColor(
-  0xFFFF9526,
+  0xFFBA7B98,
   <int, Color>{
-    50: Color(0xFFFFF0E0),
-    100: Color(0xFFFFDAB3),
-    200: Color(0xFFFFC180),
-    300: Color(0xFFFFA84D),
-    400: Color(0xFFFF9526),
-    500: Color(0xFFFF8200),
-    600: Color(0xFFFF7A00),
-    700: Color(0xFFFF6F00),
-    800: Color(0xFFFF6500),
-    900: Color(0xFFFF5200),
+    50: Color(0xFFFAF4F7),
+    100: Color(0xFFF2E4EB),
+    200: Color(0xFFEAD3DE),
+    300: Color(0xFFE2C1D1),
+    400: Color(0xFFDBB3C7),
+    500: Color(0xFFD5A6BD),
+    600: Color(0xFFD09EB7),
+    700: Color(0xFFCA95AE),
+    800: Color(0xFFC48BA6),
+    900: Color(0xFFBA7B98),
   },
 );
 
@@ -34,8 +34,6 @@ class MyTheme extends ChangeNotifier {
     current = _isDark
         ? ThemeData(
             brightness: Brightness.dark,
-            primarySwatch: customSwatch,
-            primaryColor: customSwatch,
             splashFactory: NoSplash.splashFactory,
           )
         : ThemeData(
